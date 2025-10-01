@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mubarka Ali — Portfolio / Resume</title>
   <style>
-    /* Simple, text-only responsive styling */
     :root{
       --max-width:900px;
       --accent:#0b5fff;
@@ -14,24 +13,20 @@
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       color:#111;
     }
-    html,body{height:100%}
     body{
       margin:0;
       padding:2rem;
       display:flex;
       justify-content:center;
-      background: #fbfdff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
+      background:#fbfdff;
     }
     .container{
       width:100%;
       max-width:var(--max-width);
-      background: white;
+      background:white;
       border-radius:10px;
       padding:2rem;
-      box-shadow: 0 6px 20px rgba(10,20,40,0.06);
-      box-sizing:border-box;
+      box-shadow:0 6px 20px rgba(10,20,40,0.06);
     }
     header{
       display:flex;
@@ -43,176 +38,66 @@
       padding-bottom:1rem;
       margin-bottom:1.25rem;
     }
-    .name{
-      font-size:1.6rem;
-      font-weight:700;
-      letter-spacing:0.2px;
+    nav{
+      margin-top:.5rem;
     }
-    .subtitle{
-      color:var(--muted);
-      margin-top:0.25rem;
-      font-size:0.95rem;
+    nav a{
+      display:inline-block;
+      padding:.5rem 1rem;
+      border-radius:6px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      font-size:.95rem;
     }
-    main{display:flex;flex-direction:column;gap:1.25rem}
-    section{line-height:1.45}
-    h2{
-      margin:0 0 .25rem 0;
-      font-size:1rem;
-      color:var(--accent);
-      font-weight:700;
-    }
-    .muted{color:var(--muted); font-size:0.95rem}
-    ul{margin:0;padding-left:1.1rem}
-    li{margin:0.45rem 0}
-    .two-col{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:1rem;
-    }
-    @media (max-width:640px){
-      .two-col{grid-template-columns: 1fr}
-      header{align-items:flex-start}
-    }
-    .role{font-weight:600}
-    .role-meta{font-size:0.92rem;color:var(--muted)}
-    .about{white-space:pre-wrap}
-    footer{margin-top:1.25rem;border-top:1px solid #f1f1f1;padding-top:0.75rem;color:var(--muted);font-size:0.9rem}
-    .section-list{margin:0;padding-left:1.05rem}
+    nav a:hover{background:#0844c7}
+    .name{font-size:1.6rem;font-weight:700}
+    .subtitle{color:var(--muted);margin-top:.25rem;font-size:.95rem}
+    h2{margin-top:1.5rem;color:var(--accent);font-size:1rem}
+    ul{padding-left:1.1rem}
+    footer{margin-top:1.25rem;border-top:1px solid #f1f1f1;padding-top:.75rem;color:var(--muted);font-size:.9rem}
   </style>
 </head>
 <body>
-  <div class="container" role="main" aria-labelledby="nameHeading">
+  <div class="container">
     <header>
       <div>
-        <div id="nameHeading" class="name">Mubarka Ali</div>
+        <div class="name">Mubarka Ali</div>
         <div class="subtitle">Bachelor of Architecture (B.Arch) — Minor in Digital Design</div>
-        <div class="muted" style="margin-top:.4rem">
-          Illinois Institute of Technology • Chicago, IL
-        </div>
+        <div class="subtitle">Illinois Institute of Technology • Chicago, IL</div>
       </div>
-      <div style="text-align:right">
-        <div class="muted">GPA: 3.28</div>
-        <div class="muted" style="margin-top:.35rem">Degree dates: 2022–2027</div>
-      </div>
+      <nav>
+        <a href="taylorswift.html">Taylor Swift</a>
+      </nav>
     </header>
 
     <main>
+      <h2>Education</h2>
+      <p>Bachelor of Architecture (B.Arch), Illinois Institute of Technology, Chicago, IL (2022–2027)</p>
+      <p>Minor in Digital Design</p>
 
-      <section aria-labelledby="educationHeading">
-        <h2 id="educationHeading">Education</h2>
-        <div class="two-col" style="align-items:start">
-          <div>
-            <div class="role">Illinois Institute of Technology</div>
-            <div class="role-meta">Bachelor's in Architecture (B.Arch), Minor in Digital Design — GPA: 3.28 — 2022–2027</div>
-          </div>
-          <div>
-            <div class="role">The Lyceum (Cambridge O/AS & A'Levels)</div>
-            <div class="role-meta">High School, Karachi, Pakistan — GPA: 3.6</div>
-          </div>
-        </div>
-      </section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Revit, Rhino 3D, SketchUp</li>
+        <li>Adobe Creative Cloud</li>
+        <li>3D Modeling, Rendering, Archival Documentation</li>
+      </ul>
 
-      <section aria-labelledby="skillsHeading">
-        <h2 id="skillsHeading">Skills & Tools</h2>
-        <ul class="section-list">
-          <li>Revit (BIM) — basic to intermediate</li>
-          <li>SketchUp — basic</li>
-          <li>Rhino 3D — experience used for modelling and rendering workflows</li>
-          <li>Adobe Creative Cloud — presentation and graphic skills</li>
-          <li>3D modelling & rendering, site analysis, schematic design, massing and space planning</li>
-          <li>Cataloging, archival documentation, collection research and data entry (museum experience)</li>
-          <li>Interest & practice in sustainable materials, innovative material applications</li>
-        </ul>
-      </section>
+      <h2>Experience</h2>
+      <p>Collections Intern — The Art Institute of Chicago (2024–2025)</p>
+      <p>Architecture Intern — Starchitects (2024)</p>
+      <p>Freelance 3D Modeler — Pakistan</p>
 
-      <section aria-labelledby="experienceHeading">
-        <h2 id="experienceHeading">Experience</h2>
-
-        <div>
-          <div class="role">Collections Intern — The Art Institute of Chicago, Architecture & Design Department</div>
-          <div class="role-meta">Sept 2024 – May 2025</div>
-          <ul class="section-list">
-            <li>Assisted in cataloging, organizing and maintaining architectural and design collections.</li>
-            <li>Conducted research and data entry for collection records.</li>
-            <li>Supported exhibition planning and archival documentation; gained hands-on experience with preservation and museum workflows.</li>
-          </ul>
-        </div>
-
-        <div style="margin-top:.8rem">
-          <div class="role">Architecture Intern — Starchitects</div>
-          <div class="role-meta">June 2024 – Aug 2024</div>
-          <ul class="section-list">
-            <li>Conducted feasibility studies, zoning analysis and code compliance research.</li>
-            <li>Assisted meetings with contractors and construction management teams.</li>
-            <li>Explored innovative material applications and sustainable strategies; aided in initial design for a mountain resort and worked on renderings for a luxury residential project.</li>
-            <li>Improved Revit skills and used Rhino 3D and Adobe apps.</li>
-          </ul>
-        </div>
-
-        <div style="margin-top:.8rem">
-          <div class="role">Architectural Intern — Identity Architects and Interior Design</div>
-          <div class="role-meta">May 2022 – Aug 2022</div>
-          <ul class="section-list">
-            <li>Learned basics of SketchUp and Revit; started reading detailed drawings in Revit.</li>
-            <li>Developed conceptual massings and space planning proposals for low-cost housing.</li>
-          </ul>
-        </div>
-
-        <div style="margin-top:.8rem">
-          <div class="role">Architectural Intern — Coalsce Designs</div>
-          <div class="role-meta">June 2021 – Sept 2021</div>
-          <ul class="section-list">
-            <li>Assisted drafting, 3D modelling and site analysis.</li>
-            <li>Prepared presentation materials: mood boards and schematic designs for clients.</li>
-            <li>Collaborated on initial design ideas and documentation.</li>
-          </ul>
-        </div>
-
-        <div style="margin-top:.8rem">
-          <div class="role">Freelance 3D Modeler (Pakistan)</div>
-          <div class="role-meta">Ongoing / Contract</div>
-          <ul class="section-list">
-            <li>Created detailed 3D models and renderings for small architectural firms.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section aria-labelledby="projectsHeading">
-        <h2 id="projectsHeading">Design Projects & Competitions</h2>
-        <ul class="section-list">
-          <li>Design-Build project — Northern Areas, Pakistan: contributed to on-site construction and sustainable material application.</li>
-          <li>Multiple competition entries (Bustler, ACSA): conceptual designs and presentation development.</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="involvementHeading">
-        <h2 id="involvementHeading">Leadership & Involvement</h2>
-        <ul class="section-list">
-          <li><strong>AIAS at IIT — Events Chair</strong>: Organized an architectural student meetup, curated and managed an on-campus exhibition of student projects, coordinated architect talks and facilitated discussions.</li>
-          <li>Volunteer and community engagement through design-build, cleanup activities, and teaching children.</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="aboutHeading">
-        <h2 id="aboutHeading">About Me</h2>
-        <div class="about">
-Passionate about architecture, design, and creative expression. I thrive on exploring innovative ideas and pushing boundaries. Beyond architecture, I enjoy painting, reading, sports, and music — DJing as a hobby. I am always eager to learn and seek opportunities that challenge me and allow me to contribute meaningfully to the field.
-        </div>
-      </section>
-
-      <section aria-labelledby="additionalHeading">
-        <h2 id="additionalHeading">Additional Notes</h2>
-        <ul class="section-list">
-          <li>Software exposure: Revit, Rhino 3D, SketchUp, Adobe Creative Cloud.</li>
-          <li>Interests: material innovation, sustainability, museum collections & archival work.</li>
-          <li>Available for internships, freelance modelling, and collaborative design projects.</li>
-        </ul>
-      </section>
-
+      <h2>Projects & Involvement</h2>
+      <ul>
+        <li>Design-Build project in Northern Pakistan</li>
+        <li>AIAS Events Chair — organized exhibitions and talks</li>
+        <li>Volunteer cleanup and teaching initiatives</li>
+      </ul>
     </main>
 
     <footer>
-      This page was created from the uploaded resume. Source: resume file. :contentReference[oaicite:1]{index=1}
+      This page was created from the uploaded resume.
     </footer>
   </div>
 </body>
