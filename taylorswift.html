@@ -3,69 +3,131 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Taylor Swift</title>
+  <title>Taylor Swift — Profile</title>
   <style>
-    body{
-      margin:0;
-      padding:2rem;
-      font-family:system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-      background:#fffafc;
-      color:#222;
-      line-height:1.6;
+    :root {
+      --bg: #f7f2ff;          /* soft lavender background */
+      --card: #ffffff;
+      --accent: #a78bfa;      /* pastel purple accent */
+      --accent-dark: #7c3aed; /* deeper purple for headings */
+      --muted: #6d4aa0;       /* muted purple for secondary text */
+      --text: #2c1b3a;        /* dark purple for body text */
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    .container{
-      max-width:800px;
-      margin:auto;
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(180deg, var(--bg), #fff);
+      color: var(--text);
     }
-    header{
-      border-bottom:2px solid #eee;
-      padding-bottom:1rem;
-      margin-bottom:1.5rem;
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(124, 58, 237, 0.1);
+      border: 1px solid rgba(167, 139, 250, 0.2);
     }
-    h1{margin:0;color:#b91c1c}
-    nav{margin-top:.75rem}
-    nav a{
-      text-decoration:none;
-      color:#0b5fff;
-      font-weight:600;
+
+    header {
+      border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
-    h2{color:#b91c1c;font-size:1.2rem;margin-top:1.5rem}
-    footer{margin-top:2rem;font-size:.9rem;color:#555}
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--accent-dark);
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background: var(--accent-dark);
+    }
+
+    h2 {
+      color: var(--accent-dark);
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0.6rem 0;
+    }
+
+    ul {
+      margin: 0.6rem 0 0 1.2rem;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(124, 58, 237, 0.15);
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Taylor Swift</h1>
-      <nav><a href="index.html">← Back to Resume</a></nav>
+      <div>
+        <h1>Taylor Swift</h1>
+        <p class="subtitle">American Singer-Songwriter</p>
+      </div>
+      <nav>
+        <a href="index.html">← Back to Resume</a>
+      </nav>
     </header>
 
     <main>
       <h2>About</h2>
       <p>
-        Taylor Swift is an American singer-songwriter, recognized worldwide as one of the most influential and successful artists of the 21st century. 
-        Known for her storytelling, she has transitioned across genres from country to pop and alternative, while building a devoted global fanbase.
+        Taylor Swift is a globally acclaimed American singer-songwriter known for her
+        storytelling, genre-spanning career, and influence on modern music culture.
+        She has transitioned from country roots to pop, indie folk, and alternative,
+        earning recognition as one of the most successful artists of the 21st century.
       </p>
 
       <h2>Career Highlights</h2>
       <ul>
-        <li>Debut in 2006 with her self-titled country album <em>Taylor Swift</em>.</li>
-        <li>Breakthrough with <em>Fearless</em> (2008), winning multiple Grammy Awards including Album of the Year.</li>
-        <li>Pop reinvention with <em>1989</em> (2014), featuring global hits like “Shake It Off” and “Blank Space.”</li>
-        <li>Independent creative control with <em>Reputation</em> (2017) and <em>Lover</em> (2019).</li>
-        <li>Folklore & Evermore (2020) showcased a more indie-folk style, critically acclaimed for its lyrical depth.</li>
-        <li>The <em>Eras Tour</em> (2023–2024) became one of the highest-grossing concert tours in history.</li>
+        <li><em>Taylor Swift</em> (2006) — country debut that launched her career.</li>
+        <li><em>Fearless</em> (2008) — Grammy-winning album with enduring hits.</li>
+        <li><em>1989</em> (2014) — her official shift to pop with record-breaking success.</li>
+        <li><em>Folklore</em> & <em>Evermore</em> (2020) — critically acclaimed indie-folk projects.</li>
+        <li>The <em>Eras Tour</em> (2023–2024) — one of the highest-grossing concert tours in history.</li>
       </ul>
 
       <h2>Impact</h2>
       <p>
-        Beyond music, Swift has become a cultural icon and advocate for artists' rights, women’s empowerment, and creative ownership.
-        She has re-recorded much of her early catalog to regain control of her masters, producing <em>Taylor’s Versions</em>.
+        Beyond her music, Swift has become a cultural icon and advocate for artists’
+        rights, women’s empowerment, and creative ownership. Her re-recorded
+        <em>Taylor’s Versions</em> reflect her commitment to reclaiming artistic control
+        while deepening her connection with fans worldwide.
       </p>
     </main>
 
     <footer>
-      Text-only Taylor Swift profile page.
+      Taylor Swift profile page • Themed in Lavender & Purple ✨
     </footer>
   </div>
 </body>
